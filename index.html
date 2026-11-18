@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; form-action 'none'; base-uri 'none';">
+  <title>PKHosting VPS Hosting — High-Speed NVMe Cloud VPS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="PKHosting Home">
+        <svg class="brand-icon" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+          <rect x="2" y="3" width="24" height="8" rx="2" fill="#047857"/>
+          <rect x="2" y="17" width="24" height="8" rx="2" fill="#065f46"/>
+          <circle cx="7" cy="7" r="1.5" fill="#ecfdf5"/>
+          <circle cx="7" cy="21" r="1.5" fill="#34d399"/>
+        </svg>
+        <span class="brand-text">PKHosting</span>
+      </a>
+      <nav aria-label="Primary navigation" class="site-nav">
+        <a href="#pricing-plans">VPS Plans</a>
+        <a href="#comparison">Compare Specs</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Enterprise NVMe VPS Infrastructure</p>
+        <h1>PKHosting VPS Hosting</h1>
+        <p class="hero-subtitle">
+          Dedicated vCPU resources, pure Gen4 NVMe storage, and instant root access with local PKR billing and zero hidden fees.
+        </p>
+        <div class="hero-actions">
+          <a href="#pricing-plans" class="btn btn-primary">View VPS Plans</a>
+          <a href="#comparison" class="btn btn-secondary">Compare All 10 Specs</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing-plans" class="section" aria-labelledby="plans-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="plans-heading">Transparent NVMe VPS Pricing</h2>
+          <p>Switch between monthly and annual billing (2 months free on annual plans) or view rates in PKR, USD, and GBP.</p>
+        </div>
+
+        <div class="controls-bar">
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button type="button" class="toggle-btn is-active" data-billing="monthly" aria-pressed="true">
+              Monthly
+            </button>
+            <button type="button" class="toggle-btn" data-billing="annually" aria-pressed="false">
+              Annually <span class="toggle-pill">2 Months Free</span>
+            </button>
+          </div>
+
+          <div class="currency-control">
+            <label for="currency-select">Currency:</label>
+            <select id="currency-select" name="currency">
+              <option value="PKR" selected>PKR (Rs)</option>
+              <option value="USD">USD ($)</option>
+              <option value="GBP">GBP (£)</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="pricing-live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+        <div class="pricing-grid">
+          <!-- Plan 1: Starter -->
+          <article class="plan-card" data-plan="starter" data-monthly-pkr="2400">
+            <div class="plan-header">
+              <h3>Starter</h3>
+              <p class="plan-desc">Ideal for lightweight APIs, staging sites, and personal apps.</p>
+            </div>
+            <div class="price-box">
+              <div class="price-main">
+                <span class="price-amount">Rs 2,400</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <div class="annual-meta" hidden>
+                <span class="annual-total"></span>
+                <span class="savings-badge"></span>
+              </div>
+            </div>
+            <ul class="plan-highlights">
+              <li><strong>2 vCPU</strong> Ryzen Cores</li>
+              <li><strong>4 GB</strong> DDR5 ECC RAM</li>
+              <li><strong>60 GB</strong> Gen4 NVMe SSD</li>
+              <li><strong>2 TB</strong> Monthly Bandwidth</li>
+            </ul>
+            <a href="#comparison" class="btn btn-outline btn-block">Configure Starter</a>
+          </article>
+
+          <!-- Plan 2: Growth (Most Popular) -->
+          <article class="plan-card plan-card--popular" data-plan="growth" data-monthly-pkr="4800">
+            <div class="popular-badge">Most popular</div>
+            <div class="plan-header">
+              <h3>Growth</h3>
+              <p class="plan-desc">Built for production web apps, WooCommerce stores, and Docker workloads.</p>
+            </div>
+            <div class="price-box">
+              <div class="price-main">
+                <span class="price-amount">Rs 4,800</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <div class="annual-meta" hidden>
+                <span class="annual-total"></span>
+                <span class="savings-badge"></span>
+              </div>
+            </div>
+            <ul class="plan-highlights">
+              <li><strong>4 vCPU</strong> Ryzen Cores</li>
+              <li><strong>8 GB</strong> DDR5 ECC RAM</li>
+              <li><strong>120 GB</strong> Gen4 NVMe SSD</li>
+              <li><strong>4 TB</strong> Monthly Bandwidth</li>
+            </ul>
+            <a href="#comparison" class="btn btn-primary btn-block">Configure Growth</a>
+          </article>
+
+          <!-- Plan 3: Scale -->
+          <article class="plan-card" data-plan="scale" data-monthly-pkr="9600">
+            <div class="plan-header">
+              <h3>Scale</h3>
+              <p class="plan-desc">High-throughput compute for multi-tenant SaaS and busy databases.</p>
+            </div>
+            <div class="price-box">
+              <div class="price-main">
+                <span class="price-amount">Rs 9,600</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <div class="annual-meta" hidden>
+                <span class="annual-total"></span>
+                <span class="savings-badge"></span>
+              </div>
+            </div>
+            <ul class="plan-highlights">
+              <li><strong>6 vCPU</strong> Ryzen Cores</li>
+              <li><strong>16 GB</strong> DDR5 ECC RAM</li>
+              <li><strong>240 GB</strong> Gen4 NVMe SSD</li>
+              <li><strong>8 TB</strong> Monthly Bandwidth</li>
+            </ul>
+            <a href="#comparison" class="btn btn-outline btn-block">Configure Scale</a>
+          </article>
+
+          <!-- Plan 4: Dedicated Core -->
+          <article class="plan-card" data-plan="dedicated" data-monthly-pkr="19500">
+            <div class="plan-header">
+              <h3>Dedicated Core</h3>
+              <p class="plan-desc">Uncontended physical threads for latency-critical enterprise workloads.</p>
+            </div>
+            <div class="price-box">
+              <div class="price-main">
+                <span class="price-amount">Rs 19,500</span>
+                <span class="price-period">/ month</span>
+              </div>
+              <div class="annual-meta" hidden>
+                <span class="annual-total"></span>
+                <span class="savings-badge"></span>
+              </div>
+            </div>
+            <ul class="plan-highlights">
+              <li><strong>8 Dedicated</strong> Physical Cores</li>
+              <li><strong>32 GB</strong> DDR5 ECC RAM</li>
+              <li><strong>480 GB</strong> Gen4 NVMe SSD</li>
+              <li><strong>15 TB</strong> Monthly Bandwidth</li>
+            </ul>
+            <a href="#comparison" class="btn btn-outline btn-block">Configure Dedicated</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="section section-alt" aria-labelledby="compare-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="compare-heading">Full Plan Comparison</h2>
+          <p>Compare hardware, network, and management specifications across all four VPS tiers.</p>
+        </div>
+
+        <div class="table-wrapper" role="region" aria-label="VPS specification comparison table" tabindex="0">
+          <table class="spec-table">
+            <caption class="sr-only">Comparison of Starter, Growth, Scale, and Dedicated Core VPS specifications</caption>
+            <thead>
+              <tr>
+                <th scope="col">Specification</th>
+                <th scope="col">Starter</th>
+                <th scope="col" class="col-popular">Growth (Most popular)</th>
+                <th scope="col">Scale</th>
+                <th scope="col">Dedicated Core</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1. vCPU Allocation</th>
+                <td>2 Shared vCPU</td>
+                <td class="col-popular">4 Shared vCPU</td>
+                <td>6 Shared vCPU</td>
+                <td>8 Dedicated Cores</td>
+              </tr>
+              <tr>
+                <th scope="row">2. Memory (RAM)</th>
+                <td>4 GB DDR5 ECC</td>
+                <td class="col-popular">8 GB DDR5 ECC</td>
+                <td>16 GB DDR5 ECC</td>
+                <td>32 GB DDR5 ECC</td>
+              </tr>
+              <tr>
+                <th scope="row">3. NVMe SSD Storage</th>
+                <td>60 GB RAID-10 NVMe</td>
+                <td class="col-popular">120 GB RAID-10 NVMe</td>
+                <td>240 GB RAID-10 NVMe</td>
+                <td>480 GB RAID-10 NVMe</td>
+              </tr>
+              <tr>
+                <th scope="row">4. Monthly Bandwidth</th>
+                <td>2 TB Transfer</td>
+                <td class="col-popular">4 TB Transfer</td>
+                <td>8 TB Transfer</td>
+                <td>15 TB Transfer</td>
+              </tr>
+              <tr>
+                <th scope="row">5. Network Port Speed</th>
+                <td>1 Gbps Uplink</td>
+                <td class="col-popular">1 Gbps Uplink</td>
+                <td>2.5 Gbps Uplink</td>
+                <td>10 Gbps Uplink</td>
+              </tr>
+              <tr>
+                <th scope="row">6. Dedicated IPv4 &amp; IPv6</th>
+                <td>1 IPv4 + /64 IPv6</td>
+                <td class="col-popular">1 IPv4 + /64 IPv6</td>
+                <td>2 IPv4 + /64 IPv6</td>
+                <td>3 IPv4 + /64 IPv6</td>
+              </tr>
+              <tr>
+                <th scope="row">7. Root &amp; SSH Access</th>
+                <td>Full Root + KVM Console</td>
+                <td class="col-popular">Full Root + KVM Console</td>
+                <td>Full Root + KVM Console</td>
+                <td>Full Root + KVM Console</td>
+              </tr>
+              <tr>
+                <th scope="row">8. Operating Systems</th>
+                <td>Ubuntu, Debian, AlmaLinux</td>
+                <td class="col-popular">Linux + Custom ISO</td>
+                <td>Linux + Windows Server</td>
+                <td>Linux + Windows Server</td>
+              </tr>
+              <tr>
+                <th scope="row">9. Automated Backups</th>
+                <td>Weekly Snapshots</td>
+                <td class="col-popular">Daily Snapshots (7-day)</td>
+                <td>Daily Snapshots (14-day)</td>
+                <td>Daily + Off-site Vault</td>
+              </tr>
+              <tr>
+                <th scope="row">10. DDoS Protection &amp; SLA</th>
+                <td>Always-On L3/L4 · 99.9%</td>
+                <td class="col-popular">Always-On L3/L4 · 99.95%</td>
+                <td>L3/L4/L7 Shield · 99.95%</td>
+                <td>Dedicated Mitigation · 99.99%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section" aria-labelledby="faq-heading">
+      <div class="container faq-container">
+        <div class="section-header">
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+          <p>Answers to common questions about provisioning, billing, and server management.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How quickly is my PKHosting VPS provisioned after payment?</summary>
+            <div class="faq-answer">
+              <p>Orders paid via Raast, JazzCash, Easypaisa, or debit/credit card are provisioned automatically within 60 seconds. Your root SSH credentials and KVM console URL appear immediately in your client portal.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How does the annual billing discount work?</summary>
+            <div class="faq-answer">
+              <p>When you choose annual billing, you pay for 10 months and receive 12 full months of hosting—giving you 2 months free (16.67% off) locked in for your entire first billing cycle.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I upgrade from Starter or Growth without losing my data?</summary>
+            <div class="faq-answer">
+              <p>Yes. You can scale vCPU, RAM, and NVMe storage upward from your dashboard with a single reboot, preserving your IPv4 address, firewall rules, and existing disk volumes.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I get full root access and custom ISO support?</summary>
+            <div class="faq-answer">
+              <p>Every PKHosting VPS includes full root SSH access, a browser-based VNC/KVM rescue console, and one-click rebuilds for Ubuntu 24.04 LTS, Debian 12, AlmaLinux 9, or custom ISO images.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Which local Pakistani payment methods are supported?</summary>
+            <div class="faq-answer">
+              <p>We support instant Raast / IBFT bank transfers, JazzCash, Easypaisa, and Pakistani or international Visa/Mastercard debit and credit cards with instant invoice verification.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>PKHosting VPS Infrastructure</strong>
+        <p>Built for Pakistani developers, agencies, and high-growth businesses.</p>
+      </div>
+
+      <div class="payment-section">
+        <p class="payment-label">Accepted Payment Methods in Pakistan:</p>
+        <ul class="payment-list" aria-label="Supported payment methods">
+          <li class="payment-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M3 10L12 4l9 6v2H3v-2zm2 4h3v5H5v-5zm5.5 0h3v5h-3v-5zM16 14h3v5h-3v-5zM2 20h20v2H2v-2z" fill="#047857"/>
+            </svg>
+            <span>Raast / Bank Transfer</span>
+          </li>
+          <li class="payment-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="6" y="2" width="12" height="20" rx="2.5" fill="none" stroke="#b91c1c" stroke-width="2"/>
+              <circle cx="12" cy="18" r="1.2" fill="#b91c1c"/>
+            </svg>
+            <span>JazzCash</span>
+          </li>
+          <li class="payment-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="6" y="2" width="12" height="20" rx="2.5" fill="none" stroke="#047857" stroke-width="2"/>
+              <path d="M9.5 11.5l2 2 3.5-3.5" fill="none" stroke="#047857" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>Easypaisa</span>
+          </li>
+          <li class="payment-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="2" y="5" width="20" height="14" rx="2" fill="none" stroke="#1e293b" stroke-width="2"/>
+              <line x1="2" y1="10" x2="22" y2="10" stroke="#1e293b" stroke-width="2"/>
+            </svg>
+            <span>Visa / Mastercard</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
